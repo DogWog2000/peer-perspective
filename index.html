@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Coworker Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Banner with Left-Aligned Title and Right-Aligned Search -->
+    <header class="banner">
+        <h1 class="title">Peer Perspective</h1>
+        <input type="text" id="search-input" placeholder="Search by company name..." />
+    </header>
+
+    <div class="container">
+        <h2>Anonymous Coworker Reviews</h2>
+
+        <!-- Review Submission Form -->
+        <div class="review-form">
+            <!-- Smiley Rating System -->
+            <div class="smiley-rating">
+                <span class="smiley" data-value="1">😞</span>
+                <span class="smiley" data-value="2">😐</span>
+                <span class="smiley" data-value="3">😊</span>
+                <span id="rating-display">(No rating)</span>
+            </div>
+
+            <div class="input-row">
+                <input type="text" id="company-input" placeholder="Company Name" />
+                <input type="text" id="state-input" placeholder="State" />
+            </div>
+            <textarea id="review-input" placeholder="Write your anonymous review..."></textarea>
+
+            <button id="submit-review">Submit</button>
+        </div>
+
+        <!-- Reviews Feed -->
+        <div id="reviews-feed" class="reviews-feed">
+            <!-- Each review will appear here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#search-input {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.smiley-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.smiley {
+    color: #ccc;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.smiley.selected {
+    color: gold; /* Highlight selected smiley */
+}
+
+#rating-display {
+    font-size: 14px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#review-input {
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 80px;
+    margin-top: 10px;
+}
+
+#submit-review {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.reviews-feed {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.review-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.review-content {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.review-controls {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.company-state {
+    font-weight: bold;
+}
+
+.review-rating {
+    font-size: 14px;
+    font-weight: bold;
+}
