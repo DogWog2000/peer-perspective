@@ -1,130 +1,54 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
+/* Comment section styling */
+.comment-section {
+    margin-top: 10px;
+}
+
+.comment-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.comment-input input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-input button {
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.comments-list {
+    margin-top: 10px;
+    list-style-type: none;
     padding: 0;
 }
 
-.banner {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#search-input {
+.comment-item {
+    background-color: #e0e0e0;
     padding: 8px;
-    font-size: 16px;
-    width: 200px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    margin-bottom: 5px;
 }
 
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 22px;
-    margin-top: 0;
-}
-
-.review-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.smiley-rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.smiley {
-    color: #ccc;
-    font-size: 30px;
-    transition: color 0.3s ease;
-}
-
-.smiley.selected {
-    color: gold; /* Highlight selected smiley */
-}
-
-#rating-display {
-    font-size: 14px;
-}
-
-.input-row {
+/* Reactions (like/dislike) styling */
+.reactions {
     display: flex;
     gap: 10px;
-}
-
-.input-row input {
-    flex: 1;
-    padding: 10px;
     font-size: 16px;
-}
-
-#review-input {
-    padding: 10px;
-    font-size: 16px;
-    resize: vertical;
-    min-height: 80px;
-    margin-top: 10px;
-}
-
-#submit-review {
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.reviews-feed {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.review-item {
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.review-content {
-    font-size: 14px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
-.review-controls {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
+.reaction {
+    cursor: pointer;
 }
 
-.company-state {
-    font-weight: bold;
-}
-
-.review-rating {
-    font-size: 14px;
-    font-weight: bold;
+.reaction span {
+    margin-left: 5px;
 }
